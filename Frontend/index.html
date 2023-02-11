@@ -51,51 +51,205 @@
                         <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
                     </a>
                     <a class="menu-item">
-                        <span><i class="uil uil-bell"></i></span><h3>Notifications</h3>
+                        <span><i class="uil uil-bookmark"></i></span><h3>Bookmarks</h3>
                     </a>
-                    <!-- notification popup -->
-                    <div class="notifications-popup">
-                        <div>
-                            <div class="profile_picture">
-                                <img src="./images/Profile-2.jpg" alt="">
-                            </div>
-                            <div class="notification-body">
-                                <b>Zoro</b> accepted your friend request
-                                <small class="text-muted">Just now</small>
-                            </div>
-                            <div class="profile_picture">
-                                <img src="./images/Profile-3.jpg" alt="">
-                            </div>
-                            <div class="notification-body">
-                                <b>Nami</b> Nami tagged you on a post
-                                <small class="text-muted">2 days ago</small>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notifications</h3>
+                        <!-- notification popup -->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile_picture">
+                                    <img src="./images/Profile-2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Zoro</b> accepted your friend request
+                                    <small class="text-muted">Just now</small>
+                                </div>
+                                <div class="profile_picture">
+                                    <img src="./images/Profile-3.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Nami</b> Nami tagged you on a post
+                                    <small class="text-muted">2 days ago</small>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <!-- End of notification -->
+                    </a>
                     <a class="menu-item">
-                        <span><i class="uil uil-envelopes"></i></span><h3>Messages</h3>
+                        <span><i class="uil uil-envelopes" id="messages-notifications"><small class="notification-count">7+</small></i></span><h3>Messages</h3>
                     </a>
                     <a class="menu-item">
                         <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
                     </a>
                     <a class="menu-item">
                         <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
-                    </a>
-
-                    
-                        
-                        
-                        
-                        
+                    </a>     
                 </div>
+                <!-- end of sidebar -->
+                <label for="create-post" class="btn btn-primary">Create post</label>
 
             </div>
+            <!-- End of left -->
+
+
+
+
             <!-- middle -->
             <div class="middle">
+                <!-- Stories -->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile_picture">
+                            <img src="./images/Profile-1.jpg">
+                        </div>
+                        <p class="name">
+                            Your story
+                        </p>
+                    </div>
+                    <div class="story">
+                        <div class="profile_picture">
+                            <img src="./images/Profile-2.jpg">
+                        </div>
+                        <p class="name">
+                            Zoro
+                        </p>
+                    </div>
+                    <div class="story">
+                        <div class="profile_picture">
+                            <img src="./images/Profile-3.jpg">
+                        </div>
+                        <p class="name">
+                            Nami
+                        </p>
+                    </div>
+                </div>
+                <!-- End of stories -->
+                <form class="create-post">
+                    <div class="profile_picture">
+                        <img src="./images/Profile-1.jpg">
+                    </div>
+                    <input type="text" placeholder="What's on your mind, luffy?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+
+                <!-- Feeds -->
+                <div class="feeds">
+                    <!-- feed-1 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile_picture">
+                                    <img src="./images/Profile-2.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Zoro</h3>
+                                    <small>Skypiea, 20 minutes ago</small>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/Idea 1.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                                
+
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                                <span><input type="submit" value="Collaborate" class="btn btn-primary"></span>
+
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span>
+                                <img src="./images/Profile-4.jpg">
+                            </span>
+                            <span>
+                                <img src="./images/Profile-3.jpg">
+                            </span>
+                            <span>
+                                <img src="./images/Profile-5.png">
+                            </span>
+                            <p>Liked by <b>Sanji</b> and <b>232 Others </b></p>
+                            
+                        </div>
+                        <div class="caption">
+                            <p><b>Zoro</b> Let's create a website to sell customized Swords. <span class="harsh-tag">#Web development</span></p>
+                        </div>
+                        <div class="text-muted">View all 120 Comments</div>
+                    </div>
+                    <!-- end of feed 1 -->
+                    <!-- feed 2 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile_picture">
+                                    <img src="./images/Profile-4.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Sanji</h3>
+                                    <small>East blue, 50 minutes ago</small>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/Idea-2.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                                
+
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                                <span><input type="submit" value="Collaborate" class="btn btn-primary"></span>
+
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span>
+                                <img src="./images/Profile-1.jpg">
+                            </span>
+                            <span>
+                                <img src="./images/Profile-3.jpg">
+                            </span>
+                            <span>
+                                <img src="./images/Profile-2.jpg">
+                            </span>
+                            <p>Liked by <b>Sanji</b> and <b>244 Others </b></p>
+                            
+                        </div>
+                        <div class="caption">
+                            <p><b>Sanji</b> An application to deliver authentic Japanese food. <span class="harsh-tag">#Web development</span></p>
+                        </div>
+                        <div class="text-muted">View all 125 Comments</div>
+                    </div>
+                    <!-- end of feed 2 -->
+                </div>
+                <!-- end of feeds  -->
 
             </div>
+            <!-- end of Middle -->
+
+
+
             <!-- right -->
             <div class="right">
+                
 
             </div>
         </div>
