@@ -1,27 +1,31 @@
+//importing external modules
 import express from "express";
-import bodyParser from "body-parser";
-import mongoose from "mongoose";
-import cors from "cors";
-import dotenv from "dotenv";
 import morgan from "morgan";
+import cors from "cors";
+import bodyParser from "body-parser";
+import dotenv from "dotenv";
 
-/* CONFIGURATIONS */
-dotenv.config();
+//importing internal modules
+import connect from "./database/connect.js";
+
+// MOUDLE SETUP
 const app = express();
 app.use(express.json());
+dotenv.config();
 app.use(morgan("common"));
+app.use(bodyParser.json({ limit: "30mb", extended: true }));
+app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
+app.use(cors());
 
-
-/* MONGOOSE SETUP */
+// CONNECTING DB WITH APPLICATION
 const PORT = process.env.PORT || 6001;
-mongoose.set('strictQuery', true)
-mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    app.listen(PORT, () => console.log(`Server is successfullyrunning on Port: ${PORT}`));
 
+connect()
+  .then(() => {
+    app.listen(PORT, () =>
+      console.log(
+        `Server is successfully running on Port: http://localhost:${PORT}`
+      )
+    );
   })
-  .catch((error) => console.log(`${error} did not connect`));
+  .catch((error) => console.log(`\nDatabase connection failed: ${error}`));
