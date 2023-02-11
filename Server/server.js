@@ -1,11 +1,14 @@
+//importing external modules
 import express from "express";
-import bodyParser from "body-parser";
-import cors from "cors";
 import morgan from "morgan";
+import cors from "cors";
+import bodyParser from "body-parser";
 import dotenv from "dotenv";
+
+//importing internal modules
 import connect from "./database/connect.js";
 
-/* CONFIGURATIONS */
+// MOUDLE SETUP
 const app = express();
 app.use(express.json());
 dotenv.config();
@@ -14,7 +17,7 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
-/* MONGOOSE SETUP */
+// CONNECTING DB WITH APPLICATION
 const PORT = process.env.PORT || 6001;
 
 connect()
