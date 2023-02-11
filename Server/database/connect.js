@@ -11,9 +11,12 @@ const FINAL_URL = process.env.MONGO_URL.replace(
 async function connect() {
   mongoose.set("strictQuery", true);
 
-  const successful_connection = await mongoose.connect(FINAL_URL);
+  const successful_connection = await mongoose.connect(FINAL_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+  
   console.log("\nDatabase Connected!!");
-
   return successful_connection;
 }
 
