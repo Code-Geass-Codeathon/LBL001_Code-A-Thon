@@ -2,11 +2,13 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import morgan from "morgan";
+import dotenv from "dotenv";
 import connect from "./database/connect.js";
 
 /* CONFIGURATIONS */
 const app = express();
 app.use(express.json());
+dotenv.config();
 app.use(morgan("common"));
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
