@@ -292,18 +292,19 @@ main .container .left .profile{
 
 .middle .stories .story .name{
   z-index: 2;
+
 }
 
 .middle .stories .story:nth-child(1){
-  background: url("./images/story-1.jpg")
+  background: url("./images/story-1.jpeg")
   no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(2){
-  background: url("./images/story-2.jpg")
+  background: url("./images/story-2.jpeg")
   no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(3){
-  background: url("./images/story-3.jpg")
+  background: url("./images/story-3.jpeg")
   no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(4){
