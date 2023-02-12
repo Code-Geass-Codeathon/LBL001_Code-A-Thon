@@ -13,7 +13,25 @@
        JWT_SECRET="some super hard sting to guess  add your own"
        PORT=3001
        
-       
+  
   Add mongoDB connect application URL to the MONGO_URL quotations. Similary add database password.
+  
+  To run the server go to server folder and write nodemon server.js
+  
+  To test the backend Routes  go to your Postman
+  
+  start the server
+  
+  For Registring give the post request , add inurl localhost:Port/auth/register and give the following JSIN object
+  
+                 {
+                   "firstName": "Rahul",
+                   "lastName": "Singh",
+                 "email": "Rahul@gmail.com",
+                  "password": "123ss4dtr5kjlee"
+    
+  
+             }
+ 
        
  
