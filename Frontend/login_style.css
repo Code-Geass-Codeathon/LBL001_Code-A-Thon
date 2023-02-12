@@ -27,7 +27,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 body {
   display: flex;
   justify-content: center;
@@ -37,6 +36,8 @@ body {
   color: var(--color-dark);
   /* background-image: url(./images/Background.png); */
 }
+
+
 
 .container {
   padding: 40px;
