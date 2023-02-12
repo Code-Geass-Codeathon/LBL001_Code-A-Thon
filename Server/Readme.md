@@ -22,7 +22,7 @@
   
   start the server
   
-  For Registring give the post request , add inurl localhost:Port/auth/register and give the following JSIN object
+  For Registring give the post request , add inurl localhost:Port/auth/register and give the following JSON object
   
                  {
                    "firstName": "Rahul",
@@ -31,7 +31,7 @@
                   "password": "123ss4dtr5kjlee"
     
   
-             }
+                  }
  
        
  
