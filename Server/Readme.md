@@ -5,10 +5,15 @@
    After successfully adding this to your vscode run npm i , npm i -g nodemon
 
 
-   Connect it to your MOngodb data base
-   Add a .env file in server folder
-    Templete for .env file
-        MONGO_URL=""
+   To run our app in your local system, you need to create .env file in your Server folder
+   Templete for .env file
+      
+       MONGO_URL=""
        DATABASE_PASSWORD=""
        JWT_SECRET="some super hard sting to guess  add your own"
-        PORT=3001
+       PORT=3001
+       
+       
+  Add mongoDB connect application URL to the MONGO_URL quotations. Similary add database password.
+       
+ 
