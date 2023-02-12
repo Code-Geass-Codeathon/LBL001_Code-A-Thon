@@ -38,7 +38,6 @@ body{
     font-family: 'Poppins', sans-serif;
     color: var(--color-dark);
     background: var(--color-light);
-    background-image: url('./images/Background.png'); 
     overflow-x: hidden;
 }
 
