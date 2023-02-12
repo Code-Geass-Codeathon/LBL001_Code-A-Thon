@@ -8,16 +8,16 @@ Empowering communities through collaboration by connecting individuals and organ
 
 Technology Stack:
 
-Front-end Development:
+- [Front-end Development](https://github.com/Code-Geass-Codeathon/LBL001_Code-A-Thon/tree/main/Frontend):
           Dynamic and user-friendly interfaces
           Utilizing technologies such as HTML, CSS, JavaScript, and React
-Back-end Development:
+- [Back-end Development](https://github.com/Code-Geass-Codeathon/LBL001_Code-A-Thon/tree/main/Server):
             Built on the combination of Node.js and Express.js
             Ensuring seamless performance and scalability
-Database Management:
+- Database Management:
             Secure and efficient data management
             Using MongoDB, a powerful NoSQL database solution
-Cloud Infrastructure:
+- Cloud Infrastructure:
             Scalability and reliability through the use of cloud infrastructure
             Utilizing Amazon Web Services (AWS)
 
