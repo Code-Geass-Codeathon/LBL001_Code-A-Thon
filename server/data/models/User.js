@@ -7,6 +7,7 @@ const UserSchema = new mongoose.Schema(
       required: true,
       min: 2,
       max: 50,
+      unique: true,
     },
     lastName: {
       type: String,
@@ -32,6 +33,14 @@ const UserSchema = new mongoose.Schema(
     friends: {
       type: Array,
       default: [],
+    },
+    isAvatarImageSet: {
+      type: Boolean,
+      default: false,
+    },
+    avatarImage: {
+      type: String,
+      default: "",
     },
     location: String,
     occupation: String,
